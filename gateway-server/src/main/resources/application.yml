@@ -1,0 +1,17 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: gateway-server
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    urls:
+      -   name: gateway-service
+          url: /v3/api-docs
+      -   name: farming-district-service
+          url: /farming-district/v3/api-docs
