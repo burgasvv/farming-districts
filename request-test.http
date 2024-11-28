@@ -1,6 +1,5 @@
 ###
 GET http://localhost:8765/districts?filter=54-a
-Content-Type: application/json
 
 ###
 POST http://localhost:8765/districts/create
@@ -27,11 +26,9 @@ PATCH http://localhost:8765/districts/archive/1
 ###
 GET http://localhost:8765/farmers?name=Веселая ферма&taxpayerNumber=1234567890&registrationDistrictId=2
     &registrationDate=2018-10-23&archive=false
-Content-Type: application/json
 
 ###
 GET http://localhost:8765/farmers/1
-Content-Type: application/json
 
 ###
 POST http://localhost:8765/farmers/create
